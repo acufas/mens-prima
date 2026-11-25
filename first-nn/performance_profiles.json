@@ -1,0 +1,58 @@
+{
+  "dot": {
+    "multiplications": "n",
+    "accumulator_additions": "n",
+    "time_complexity": "O(n)",
+    "space_complexity_excluding_io": "O(1)",
+    "flops": "2n"
+  },
+  "matvec": {
+    "multiplications": "m * n",
+    "accumulator_additions": "m * n",
+    "time_complexity": "O(1 + m * (n + 1))",
+    "space_complexity_excluding_io": "O(1)",
+    "flops": "2mn"
+  },
+  "relu": {
+    "multiplications": "0",
+    "accumulator_additions": "0",
+    "time_complexity": "O(1)",
+    "space_complexity_excluding_io": "O(1)",
+    "flops": "0"
+  },
+  "identity": {
+    "multiplications": "0",
+    "accumulator_additions": "0",
+    "time_complexity": "O(1)",
+    "space_complexity_excluding_io": "O(1)",
+    "flops": "0"
+  },
+  "sigmoid": {
+    "multiplications": "0",
+    "accumulator_additions": "1",
+    "time_complexity": "O(1)",
+    "space_complexity_excluding_io": "O(1)",
+    "flops": "1 exp + 1 addition + 1 division"
+  },
+  "tanh": {
+    "multiplications": "0",
+    "accumulator_additions": "0",
+    "time_complexity": "O(1)",
+    "space_complexity_excluding_io": "O(1)",
+    "flops": "1 tanh (transcendental)"
+  },
+  "leaky_relu": {
+    "multiplications": "0 for x > 0, 1 for x <= 0",
+    "accumulator_additions": "0",
+    "time_complexity": "O(1)",
+    "space_complexity_excluding_io": "O(1)",
+    "flops": "at most 1"
+  },
+  "forward": {
+    "multiplications": "m * n",
+    "accumulator_additions": "m * (n + 1)",
+    "time_complexity": "O(1 + m * (n + 1))",
+    "space_complexity_excluding_io": "O(1)",
+    "flops": "2mn + m"
+  }
+}

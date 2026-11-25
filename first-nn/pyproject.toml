@@ -1,0 +1,9 @@
+[project]
+name = "first-nn"
+version = "0.1.0"
+description = "Numerical library foundations: dot product and matrix-vector multiplication"
+requires-python = ">=3.13,<3.14"
+dependencies = []
+
+[tool.uv]
+package = false
